@@ -1,0 +1,203 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: white;
+    color: black;
+}
+
+nav
+{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+
+    h4
+    {
+        font-size: 2rem;
+    }
+
+ul
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+}
+
+ li 
+{
+    width: 100%;
+
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+li :hover
+{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    transition: 0.8s;
+}
+
+ button
+{
+    display: none;
+}
+
+
+}
+
+
+
+@media screen and (max-width:878px) {
+    
+    nav
+    {
+        flex-direction: column;
+    }
+
+    nav ul
+    {
+        justify-content: space-evenly;
+    }
+
+    nav ul li 
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+}
+
+@media screen and (max-width:800px) {
+    
+    nav
+    {
+        height: fit-content;
+        min-height: 80px;
+        position: relative;
+    }
+    
+    nav ul 
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+    }
+
+    nav ul li
+    {
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+        margin: 5px;
+        padding: 4px;
+        display: none;
+        transition: .5s;
+
+    }
+
+    nav button
+    {
+        display: inline;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
+
+    
+
+}
+
+.display
+{
+    display: flex;
+    animation: anim 2s;
+}
+
+@keyframes anim
+{
+    from
+    {
+        display: none;
+        transform:rotate(45deg);
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        text-decoration: dotted;
+        text-decoration-line: underline;
+    }
+    to
+    {
+        display: inline;
+        transform: rotate(0deg);
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        text-decoration: solid;
+        text-decoration-line: underline;
+    }
+}
+
+.image
+{
+    height: fit-content;
+    object-fit: cover;
+    object-position: center;
+    width: fit-content;
+}
+
+.background
+{
+    background-color: black;
+    display: flex;
+    align-items:center;
+}
+
+#carouselExampleIndicators
+{
+    height: 40vh;
+    width: 100vw;
+}
+
+.change
+{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+#Box
+{
+    height: 40vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.card
+{
+        
+}

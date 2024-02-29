@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: black;
+}
+
+nav {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+nav h4 {
+  font-size: 2rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 800px;
+}
+nav li {
+  width: 100%;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+nav li :hover {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  transition: 0.8s;
+}
+nav button {
+  display: none;
+}
+
+@media screen and (max-width: 878px) {
+  nav {
+    flex-direction: column;
+  }
+  nav ul {
+    justify-content: space-evenly;
+  }
+  nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 800px) {
+  nav {
+    height: -moz-fit-content;
+    height: fit-content;
+    min-height: 80px;
+    position: relative;
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 5px;
+    padding: 4px;
+    display: none;
+    transition: 0.5s;
+  }
+  nav button {
+    display: inline;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
+}
+.display {
+  display: flex;
+  animation: anim 2s;
+}
+
+@keyframes anim {
+  from {
+    display: none;
+    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    -webkit-text-decoration: dotted;
+            text-decoration: dotted;
+    text-decoration-line: underline;
+  }
+  to {
+    display: inline;
+    transform: rotate(0deg);
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    -webkit-text-decoration: solid;
+            text-decoration: solid;
+    text-decoration-line: underline;
+  }
+}
+.image {
+  height: -moz-fit-content;
+  height: fit-content;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.background {
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+
+#carouselExampleIndicators {
+  height: 40vh;
+  width: 100vw;
+}
+
+.change {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+#Box {
+  height: 40vh;
+  width: 100vw;
+  background-color: black;
+}/*# sourceMappingURL=Home.css.map */

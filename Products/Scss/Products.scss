@@ -1,0 +1,318 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: white;
+    color: black;
+}
+
+nav
+{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+
+    h4
+    {
+        font-size: 2rem;
+    }
+
+ul
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+}
+
+ li 
+{
+    width: 100%;
+
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+li :hover
+{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    transition: 0.8s;
+}
+
+ button
+{
+    display: none;
+}
+
+
+}
+
+@media screen and (max-width:878px) {
+    
+    nav
+    {
+        flex-direction: column;
+    }
+
+    nav ul
+    {
+        justify-content: space-evenly;
+    }
+
+    nav ul li 
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+
+    header nav
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+@keyframes anim
+{
+    from
+    {
+        left: -20rem;
+    }
+
+    to
+    {
+        left: 4rem;
+    }
+}
+
+
+.display
+{
+    display: flex;
+    position: relative;
+    animation: anim 2s;
+}
+
+#categories
+{
+    background-color:white;
+    color: black;
+    border: 2px solid black;
+    ul
+    {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+#Tittle
+{
+    text-align: center;
+}
+
+main
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.product
+{
+    margin: .5rem;
+    padding: .4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border: 2px solid black;
+    background-color: rgb(72, 68, 68);
+    color: white;
+    width:20rem;
+    height: 45rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px black;
+
+    .img
+    {
+        width: 100%;
+        height: 40%;
+        object-fit: contain;
+        object-position: center;
+
+    }
+
+    .details
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .title
+        {
+            margin: 1rem;
+            padding: 1rem;
+        }
+
+        .description
+        {
+            margin: .1rem;
+            padding: .1rem;
+        }
+
+    }
+
+    .buttons
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        button
+        {
+            margin: .8rem;
+            background-color: green;
+            color: white;
+            width:10rem;
+            border-radius: .5rem;
+            outline: none;
+            height: 2rem;
+        }
+    }
+}
+
+.buttons button:nth-last-child(1)
+{
+    background-color: black;
+    color: white;
+}
+
+
+    @media screen and (max-width:993px) {
+
+        .product
+        {
+            width: calc(100vw/2 - 5rem);
+        }
+
+        
+    }
+
+    @media screen and (max-width:800px) {
+    
+        nav
+        {
+            height: fit-content;
+            min-height: 80px;
+            position: relative;
+        }
+        
+        nav ul 
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            height: fit-content;
+        }
+    
+        nav ul li
+        {
+           
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: fit-content;
+            margin: 5px;
+            padding: 4px;
+            display: none;
+            transition: .5s;
+    
+        }
+    
+        nav button
+        {
+            display: inline;
+            position: absolute;
+            right: 5px;
+            top: 5px;
+        }
+    
+        .product
+        {
+            width: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    
+    }
+
+    @media screen and (max-width:729px) {
+
+        main
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product
+        {
+            width: 80vh;
+
+        .img
+            {
+                width: 50vw;
+                height: 50%;
+                object-fit: contain;
+                object-position: center;
+                margin: 1rem;
+
+            }
+        }
+
+    
+        
+    }
+
+    @media screen and (max-width:455px) {
+
+        .product
+        {
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .img
+            {
+                width: 15rem;
+            }
+        }
+
+    }
