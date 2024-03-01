@@ -203,6 +203,7 @@ li :hover
 .card:nth-child(1)
 {
         display: grid;
+        place-items: center;
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 1;
@@ -212,6 +213,7 @@ li :hover
 .card:nth-child(2)
 {
     display: grid;
+    place-items: center;
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -221,6 +223,7 @@ li :hover
 .card:nth-child(3)
 {
     display: grid;
+    place-items: center;
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 2;
