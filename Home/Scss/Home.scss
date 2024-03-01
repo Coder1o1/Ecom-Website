@@ -195,37 +195,9 @@ li :hover
     height: 40vh;
     width: 100vw;
     background-color: black;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr;
 }
 
-.card:nth-child(1)
+.card
 {
-        display: grid;
-        place-items: center;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
-}
-
-.card:nth-child(2)
-{
-    display: grid;
-    place-items: center;
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-.card:nth-child(3)
-{
-    display: grid;
-    place-items: center;
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 2 ;
+        
 }
